@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر ديورا - موقع موحد ومحترف</title>
+    <title>متجر فؤاد  - موقع موحد ومحترف</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ================================================= */
         /* CSS الأساسي والموحد */
+
         /* ================================================= */
        /* CSS الأساسي والموحد */
 :root {
@@ -21,7 +22,7 @@
 body { 
     font-family: 'Cairo', sans-serif; 
     /* التعديل هنا: استخدام اللون الداكن كخلفية افتراضية */
-    background: #1f1839; /* أو var(--dark-bg) */
+    background: #121212; /* أو var(--dark-bg) */
     /* التعديل هنا: تغيير لون النص إلى الأبيض الافتراضي */
     color: #ecf0f1; 
     overflow-x: hidden; 
@@ -418,13 +419,13 @@ body {
             <input type="text" id="searchInput" placeholder="البحث عن منتج..." onkeyup="filterProducts()">
             <select id="categoryFilter" onchange="filterProducts()">
                 <option value="all">جميع الفئات</option>
-                <option value="electronics">إلكترونيات (8)</option>
-                <option value="fashion_men">أزياء رجالية (8)</option>
-                <option value="fashion_women">أزياء نسائية (8)</option>
-                <option value="accessories">إكسسوارات (8)</option>
-                <option value="jewelry">مجوهرات (8)</option>
-                <option value="beauty">عناية وجمال (8)</option>
-                <option value="luxury_decor">ديكور فاخر (8)</option>
+                <option value="electronics">إلكترونيات</option>
+                <option value="fashion_men">أزياء رجالية </option>
+                <option value="fashion_women">أزياء نسائية </option>
+                <option value="accessories">إكسسوارات</option>
+                <option value="jewelry">مجوهرات </option>
+                <option value="beauty">عناية وجمال </option>
+                <option value="luxury_decor">ديكور فاخر </option>
             </select>
             <select id="priceFilter" onchange="filterProducts()">
                 <option value="all">جميع الأسعار</option>
@@ -519,7 +520,7 @@ body {
             <div class="info-card">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>مقرنا الرئيسي</h3>
-                <p>صنعاء - شارع فؤاد - مبنى فؤاد التجاري</p>
+                <p>صنعاء - شارع الزبيري - مبنى فؤاد التجاري</p>
                 <a href="#" target="_blank" style="color: var(--secondary-color);">عرض الموقع على الخريطة</a>
             </div>
             <div class="info-card">
@@ -541,7 +542,7 @@ body {
 
 
     <footer>
-        <p>&copy; 2025 متجر ديورا. جميع الحقوق محفوظة. صُمم بشغف في اليمن.</p>
+        <p>&copy; 2023 متجر فؤاد. جميع الحقوق محفوظة. صُمم بشغف في اليمن.</p>
     </footer>
 
     <div id="loginModal" class="modal">
@@ -585,8 +586,7 @@ body {
         const products = [
             // ------------------------------------
             // 1. الإلكترونيات (8 منتجات)
-            // ------------------------------------
-            {id:101, name:"لاب توب ماكبوك برو M3", price:250000, img:"https://tse4.mm.bing.net/th/id/OIP.1oFsdB5I-wK834M3P5NvxgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", category: "electronics", rating: 4.8, featured: true, description: "أقوى حاسوب محمول بأداء خارق من آبل."},
+           {id:101, name:"لاب توب ماكبوك برو M3", price:250000, img:"https://tse4.mm.bing.net/th/id/OIP.1oFsdB5I-wK834M3P5NvxgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", category: "electronics", rating: 4.8, featured: true, description: "أقوى حاسوب محمول بأداء خارق من آبل."},
             {id:102, name:"هاتف ذكي سامسونج الترا", price:180000, img:"https://tse3.mm.bing.net/th/id/OIP.jcgrxbmMqiGTneU72NRxKAHaHc?rs=1&pid=ImgDetMain&o=7&rm=3", category: "electronics", rating: 4.7, featured: true, description: "هاتف فاخر بمواصفات متقدمة وكاميرا احترافية."},
             {id:103, name:"سماعات سوني WH-1000XM5", price:12000, img:"https://tse4.mm.bing.net/th/id/OIP.Tikzn-yEanyJUx28kQBOTAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3", category: "electronics", rating: 4.9, featured: true, description: "أفضل عزل ضوضاء في العالم بجودة صوت نقية."},
             {id:104, name:"كاميرا ديجيتال فوجي فيلم", price:45000, img:"https://creativeschoolarabia.com/wp-content/uploads/2018/12/Fujifilm-Xt3-firmware-camera-update-creative-school-arabia-%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7-%D9%81%D9%88%D8%AC%D9%8A-%D9%81%D9%88%D8%AC%D9%8A-%D9%81%D9%8A%D9%84%D9%85-%D8%AA%D8%B5%D9%88%D9%8A%D8%B1-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB-%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7-%D9%81%D9%88%D8%AC%D9%8A-%D9%81%D9%8A%D9%84%D9%85-X-T3-%D8%AA%D8%AD%D8%B5%D9%84-%D8%B9%D9%84%D9%89-%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB-%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%B1-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-4K1.jpg", category: "electronics", rating: 4.5, featured: false, description: "كاميرا احترافية بتصميم كلاسيكي وصور عالية الدقة."},
@@ -603,7 +603,7 @@ body {
             {id:203, name:"معطف شتوي كشميري", price:32000, img:"https://tse4.mm.bing.net/th/id/OIP.bcQ6qnRS-kNGO4B1521wpgHaJ3?rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_men", rating: 4.9, featured: true, description: "معطف من الكشمير الفاخر تدفئة و فخامة."},
             {id:204, name:"حذاء جلد طبيعي أسود", price:18000, img:"https://th.bing.com/th/id/OIP.mnoCKmBeITRuKKHCiTqTBgHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_men", rating: 4.6, featured: false, description: "حذاء جلد إيطالي كلاسيكي مناسب للمناسبات الرسمية."},
             {id:205, name:"بنطلون جينز ", price:6500, img:"https://tse4.mm.bing.net/th/id/OIP.6PjUiN6MJybO-5_iiMohQAHaLH?rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_men", rating: 4.2, featured: false, description: "جينز كلاسيكي بتصميم مريح وجودة عالية."},
-            {id:206, name:"سويتر صوفي فاخر", price:11000, img:"https://m.media-amazon.com/images/I/71vHiERdxAL._AC_.jpg", category: "fashion_men", rating: 4.4, featured: false, description: "سترة صوفية ذات تصميم أنيق وعصري."},
+            {id:206, name:"سويتر صوفي فاخر", price:11000, img:"https://m.media-amazon.com/images/I/71vHiERdxAL.AC.jpg", category: "fashion_men", rating: 4.4, featured: false, description: "سترة صوفية ذات تصميم أنيق وعصري."},
             {id:207, name:"ساعة رجالية جلدية", price:40000, img:"https://tse1.mm.bing.net/th/id/OIP.gh7nSty0hSqBggTqAz2IbQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_men", rating: 4.1, featured: false, description: "ساعة يد جلدية فاخرة بمينا أسود."},
             {id:208, name:"جاكت بولو انيق", price:25000, img:"https://tse4.mm.bing.net/th/id/OIP.mWClFaw40ZREADkGlqdl3wHaLH?w=640&h=960&rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_men", rating: 4.7, featured: true, description: "جاكيت فاخر صيفي كحلي انيق."},
 
@@ -618,18 +618,17 @@ body {
             {id:306, name:"قميص شيفون مطبوع", price:5200, img:"https://medias.spotern.com/products/w310/628/628515-1677573779.jpg", category: "fashion_women", rating: 4.1, featured: false, description: "قميص خفيف من الشيفون بتفاصيل أنثوية."},
             {id:307, name:"عباءة سعودية مطرزة", price:14500, img:"https://tse2.mm.bing.net/th/id/OIP.WmEj5rSF__se0RSACIlm6wHaJ-?rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_women", rating: 4.9, featured: true, description: "عباءة سوداء بتطريز فاخر يناسب السهرات."},
             {id:308, name:"طقم بيجامة حريرية", price:8500, img:"https://tse2.mm.bing.net/th/id/OIP.tB1TFJhwg5nMbvefJ-96RQHaHq?rs=1&pid=ImgDetMain&o=7&rm=3", category: "fashion_women", rating: 4.5, featured: false, description: "طقم نوم فاخر من الحرير الناعم."},
-
             // ------------------------------------
             // 4. الإكسسوارات (8 منتجات)
             // ------------------------------------
-            {id:401, name:"نظارة شمسية Ray Ban", price:5500, img:"https://images.unsplash.com/photo-1565431600812-78d10b784e1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.1, featured: false, description: "نظارة شمسية عصرية بحماية كاملة من الأشعة فوق البنفسجية."},
-            {id:402, name:"محفظة جلد (Bottega)", price:40000, img:"https://images.unsplash.com/photo-1587522544252-098d752f9e4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.9, featured: true, description: "محفظة رجالية مصنوعة من الجلد الطبيعي الفاخر بتصميم البوتيقا."},
-            {id:403, name:"حزام جلد تمساح", price:22000, img:"https://images.unsplash.com/photo-1591242371457-41440f13f019?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.7, featured: false, description: "حزام رجالي من جلد التمساح الأصلي بمشبك ذهبي."},
-            {id:404, name:"شال كشميري فاخر", price:10500, img:"https://images.unsplash.com/photo-1522938974483-c5a4d656911c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.5, featured: false, description: "شال صوفي من الكشمير يناسب الرجال والنساء."},
-            {id:405, name:"كفر هاتف أيفون (جلد)", price:3000, img:"https://images.unsplash.com/photo-1627885489814-1e099f18749d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.2, featured: false, description: "حافظة هاتف من الجلد الطبيعي لحماية وأناقة."},
-            {id:406, name:"قبعة كلاسيكية", price:6000, img:"https://images.unsplash.com/photo-1622079075778-9a3d4f4f4f4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.0, featured: false, description: "قبعة صوفية كلاسيكية بتصميم مستوحى من الموضة القديمة."},
-            {id:407, name:"حقيبة سفر فاخرة", price:75000, img:"https://images.unsplash.com/photo-1563299797-0b1a64f3d1e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.8, featured: true, description: "حقيبة سفر جلدية كبيرة ومزودة بتقنية قفل ذكية."},
-            {id:408, name:"قفازات جلدية ليدي", price:4500, img:"https://images.unsplash.com/photo-1596700877903-8889445d475c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80", category: "accessories", rating: 4.3, featured: false, description: "قفازات جلدية أنيقة ودافئة للسيدات."},
+            {id:401, name:"نظارة شمسية Ray Ban", price:5500, img:"https://tse1.mm.bing.net/th/id/OIP.WLsMgw_lvF8A7NfYc_RpzQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.1, featured: false, description: "نظارة شمسية عصرية بحماية كاملة من الأشعة فوق البنفسجية."},
+            {id:402, name:"محفظة جلد (Bottega)", price:40000, img:"https://tse1.mm.bing.net/th/id/OIP.gcS4UN7JpITPj2g4VTB0BAHaEl?rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.9, featured: true, description: "محفظة رجالية مصنوعة من الجلد الطبيعي الفاخر بتصميم البوتيقا."},
+            {id:403, name:"حزام جلد تمساح", price:22000, img:"https://th.bing.com/th/id/OIP.Jz3U2O7EM2I0uTRRJQsVngHaJ2?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.7, featured: false, description: "حزام رجالي من جلد التمساح الأصلي بمشبك ذهبي."},
+            {id:404, name:"شال كشميري فاخر", price:10500, img:"https://th.bing.com/th/id/OIP._nYcwlsWNoQ0wLoFq5YESAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.5, featured: false, description: "شال صوفي من الكشمير يناسب الرجال والنساء."},
+            {id:405, name:"كفر هاتف أيفون (جلد)", price:3000, img:"https://tse4.mm.bing.net/th/id/OIP.5LCtWTBlpCDuRzouxGcJmQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.2, featured: false, description: "حافظة هاتف من الجلد الطبيعي لحماية وأناقة."},
+            {id:406, name:"قبعة كلاسيكية", price:6000, img:"https://tse2.mm.bing.net/th/id/OIP.OzSJSXgVvKNtjNZTCInGZgHaLI?rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.0, featured: false, description: "قبعة صوفية كلاسيكية بتصميم مستوحى من الموضة القديمة."},
+            {id:407, name:"حقيبة سفر فاخرة", price:75000, img:"https://th.bing.com/th/id/OIP.bCHMqzNB8rVoIjUtS-D3TQHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", category: "accessories", rating: 4.8, featured: true, description: "حقيبة سفر جلدية كبيرة ومزودة بتقنية قفل ذكية."},
+            {id:408, name:"قفازات جلدية ليدي", price:4500, img:"https://ae01.alicdn.com/kf/HTB1OVPTPXXXXXcNaFXXq6xXFXXXL/2020.jpg", category: "accessories", rating: 4.3, featured: false, description: "قفازات جلدية أنيقة ودافئة للسيدات."},
 
             // ------------------------------------
             // 5. المجوهرات (8 منتجات)
@@ -665,7 +664,8 @@ body {
             {id:705, name:"لوحة فنية ", price:15000, img:"https://tse4.mm.bing.net/th/id/OIP.AORVz41oBNt7G2Jw-uTwQgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3", category: "luxury_decor", rating: 4.6, featured: false, description: "لوحة زيتية تجريدية بريشة فنان عالمي."},
             {id:706, name:"خزانة ملابس خشبية", price:40000, img:"https://tse3.mm.bing.net/th/id/OIP.61Jc5Zh5RBJzQ1ghrnbJbQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", category: "luxury_decor", rating: 4.2, featured: false, description: "خزانة ملابس بتصميم كلاسيكي من خشب البلوط."},
             {id:707, name:"سجادة يدوية ", price:60000, img:"https://chichomz.com/cdn/shop/files/S30_8cb009a4-20c2-4396-9608-b4f0f18b6997.jpg?v=1739279341", category: "luxury_decor", rating: 5.0, featured: true, description: "سجادة صوف يدوية بنقوش فارسية أصيلة."},
-            {id:708, name:"طاولة قهوة رخامية", price:25000, img:"https://th.bing.com/th/id/R.521efa5dde8b4eefacc62f3c92903f65?rik=bnDckux53GHKug&pid=ImgRaw&r=0", category: "luxury_decor", rating: 4.4, featured: false, description: "طاولة قهوة عصرية بسطح من الرخام الإيطالي."},    ];
+            {id:708, name:"طاولة قهوة رخامية", price:25000, img:"https://th.bing.com/th/id/R.521efa5dde8b4eefacc62f3c92903f65?rik=bnDckux53GHKug&pid=ImgRaw&r=0", category: "luxury_decor", rating: 4.4, featured: false, description: "طاولة قهوة عصرية بسطح من الرخام الإيطالي."},
+        ];
         const sliderImages = [
     "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80", 
     "https://images.unsplash.com/photo-1490481651980-87722a6114a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80", 
